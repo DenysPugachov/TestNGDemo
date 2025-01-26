@@ -1,5 +1,6 @@
 package com.den.tests;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 /*
@@ -17,9 +18,9 @@ navigation, and key functions.
 
 public class SmokeTest {
 
-    @Test
+    @BeforeTest
     public void SmokeTest1() {
-        System.out.println("Run SmokeTest.");
+        System.out.println("@BeforeTest -> Run SmokeTest.");
     }
 
 }

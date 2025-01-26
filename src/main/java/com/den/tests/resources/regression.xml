@@ -2,8 +2,26 @@
 <suite name="Regression Suite">
     <test name="Regression Tests">
         <classes>
-            <class name="com.den.tests.Day1Test" />
-            <class name="com.den.tests.Day2Test" />
+
+            <class name="com.den.tests.Day1Test">
+                <methods>
+<!-- Use regEx to exclude test by matching names excludeTestD1 -> "exclude.*"-->
+                    <exclude name="exclude.*"/>
+
+                </methods>
+            </class>
+
+            <class name="com.den.tests.Day2Test"/>
+            <class name="com.den.tests.IntegrationTest"/>
+            <class name="com.den.tests.SmokeTest"/>
         </classes>
     </test>
+
+    <test name="Second Regression test">
+        <classes>
+            <class name="com.den.tests.SmokeTest"/>
+            <class name="com.den.tests.FinalTest"/>
+        </classes>
+    </test>
+
 </suite>
