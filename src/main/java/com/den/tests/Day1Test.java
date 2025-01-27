@@ -9,17 +9,17 @@ public class Day1Test {
         System.out.println("@BeforeClass -> Runs fore class Day1.\n");
     }
 
-    @Test
+    @Test(dependsOnMethods={"thirdTestD1"}) // runs only after certain method
     public void firstTestD1(){
         System.out.println("Run firstTestD1.");
     }
 
-    @Test(groups={"Special"})
+    @Test(enabled=false)
     public void secondTestD1(){
         System.out.println("Run secondTestD1.");
     }
 
-    @Test(groups={"Special"})
+    @Test(timeOut=4000) // set timeOut only for that particular test (if is pulling down all other tests).
     public void thirdTestD1(){
         System.out.println("Run thirdTest Day1.");
     }
