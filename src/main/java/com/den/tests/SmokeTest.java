@@ -1,6 +1,7 @@
 package com.den.tests;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /*
@@ -21,6 +22,18 @@ public class SmokeTest {
     @BeforeTest
     public void SmokeTest1() {
         System.out.println("@BeforeTest -> Run SmokeTest.");
+    }
+
+    @Parameters({"key"})
+    @Test
+    public void SmokeTestPrams(String key) {
+        System.out.println("Run SmokeTestPrams key: " + key);
+    }
+
+    @Parameters({"key"})
+    @Test
+    public void SmokeTestPrams2(String key2) {
+        System.out.println("Run SmokeTestPrams key2: " + key2);
     }
 
 }

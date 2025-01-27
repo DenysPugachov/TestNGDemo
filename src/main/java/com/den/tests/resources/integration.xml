@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="integration Suite">
+    <parameter name="key_integration" value="some_integration_value"/>
     <test name="integration Tests">
         <classes>
             <class name="com.den.tests.IntegrationTest" />
