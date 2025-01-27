@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Special Suite">
+    <test name="special test">
+        <groups>
+            <run>
+                <include name="Special"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.den.tests.Day1Test"/>
+            <class name="com.den.tests.Day2Test"/>
+            <class name="com.den.tests.IntegrationTest"/>
+            <class name="com.den.tests.SmokeTest"/>
+        </classes>
+    </test>
+</suite>

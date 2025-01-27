@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 
 public class FinalTest {
-    @Test
+    @Test(groups={"Fuck"})
     public void someFinishTest() {
         System.out.println("Run Some finish test.");
     }

@@ -14,12 +14,12 @@ public class Day1Test {
         System.out.println("Run firstTestD1.");
     }
 
-    @Test
+    @Test(groups={"Special"})
     public void secondTestD1(){
         System.out.println("Run secondTestD1.");
     }
 
-    @Test
+    @Test(groups={"Special"})
     public void thirdTestD1(){
         System.out.println("Run thirdTest Day1.");
     }

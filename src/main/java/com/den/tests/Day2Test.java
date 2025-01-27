@@ -11,7 +11,7 @@ public class Day2Test {
         System.out.println("@After Test -> Runs in the end of test.");
     }
 
-    @Test
+    @Test(groups={"Special", "Fuck"})
     public void firstTestD2(){
         System.out.println("Run firstTestD2");
     }
@@ -21,7 +21,7 @@ public class Day2Test {
         System.out.println("@AfterSuit -> Runs After Suite Test Day 2. ");
     }
 
-    @Test
+    @Test(groups={"Fuck"})
     public void secondTestD2(){
         System.out.println("Run secondTestD2");
     }
