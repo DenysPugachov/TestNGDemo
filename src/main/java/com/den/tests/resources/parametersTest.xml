@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite">
+    <test name="Parameters Tests">
+
+        <parameter name="url" value="https://testprameter.com/url"/>
+        <parameter name="name" value="Alice"/>
+
+        <classes>
+            <class name="com.den.tests.ParametersTest"/>
+        </classes>
+    </test>
+</suite>

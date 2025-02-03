@@ -1,14 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
 
-    <parameter name="URL" value="https://testprameter.com/url"/>
-
     <test name="Regression Tests">
+        <!-- Pass this parameter in one for classes below-->
+        <parameter name="URL" value="https://testprameter.com/url"/>
+
         <classes>
 
             <class name="com.den.tests.Day1Test">
                 <methods>
-<!-- Use regEx to exclude test by matching names excludeTestD1 -> "exclude.*"-->
+                    <!-- Use regEx to exclude test by matching names excludeTestD1 -> "exclude.*"-->
                     <exclude name="exclude.*"/>
 
                 </methods>

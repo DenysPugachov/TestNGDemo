@@ -4,10 +4,10 @@ import org.testng.annotations.*;
 
 public class Day1Test {
 
-    @Parameters({"URL"}) // pass params (defined in .xml) in function below
     @Test
-    public void parameterTest(String URL){
-        System.out.println("Run parameterTest: " + URL);
+    @Parameters({"URL"}) // pass params (defined in .xml) in function below
+    public void parameterTest(String urlFromXml){
+        System.out.println("Run parameterTest urlFromXml: " + urlFromXml);
     }
 
     @BeforeClass
