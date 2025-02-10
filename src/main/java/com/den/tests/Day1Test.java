@@ -1,5 +1,6 @@
 package com.den.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class Day1Test {
@@ -8,6 +9,7 @@ public class Day1Test {
     @Parameters({"URL"}) // pass params (defined in .xml) in function below
     public void parameterTest(String urlFromXml){
         System.out.println("Run parameterTest urlFromXml: " + urlFromXml);
+        Assert.assertTrue(false);
     }
 
     @BeforeClass

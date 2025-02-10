@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
 
+    <listeners>
+        <listener class-name="com.den.tests.Listeners"/>
+    </listeners>
+
     <test name="Regression Tests">
         <!-- Pass this parameter in one for classes below-->
         <parameter name="URL" value="https://testprameter.com/url"/>
